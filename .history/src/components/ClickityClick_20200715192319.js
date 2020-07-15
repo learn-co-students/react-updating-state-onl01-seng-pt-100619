@@ -5,7 +5,6 @@ import React from 'react';
 class ClickityClick extends React.Component {
   constructor() {
     super();
-
  
     // Define the initial state:
     this.state = {
@@ -14,15 +13,9 @@ class ClickityClick extends React.Component {
   }
  
   handleClick = () => {
-    this.setState(previousState => {
-      return {
-        count: previousState.count + 1
-      }
-    })
-  }
-  
-
-
+    // Update our state here...
+  };
+ 
   render() {
     return (
       <div>
@@ -30,7 +23,7 @@ class ClickityClick extends React.Component {
         <button onClick={this.handleClick}>Click me!</button>
       </div>
     );
-  }}
-
+  }
+}
  
- export default ClickityClick;
+export default ClickityClick;

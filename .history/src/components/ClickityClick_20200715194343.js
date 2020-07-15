@@ -14,15 +14,12 @@ class ClickityClick extends React.Component {
   }
  
   handleClick = () => {
-    this.setState(previousState => {
-      return {
-        count: previousState.count + 1
-      }
-    })
-  }
-  
-
-
+    this.setState({
+        hasBeenClicked: true        
+  })
+  console.log(this.state.hasBeenClicked);
+}
+ 
   render() {
     return (
       <div>
@@ -30,7 +27,7 @@ class ClickityClick extends React.Component {
         <button onClick={this.handleClick}>Click me!</button>
       </div>
     );
-  }}
-
+  }
+}
  
- export default ClickityClick;
+export default ClickityClick;

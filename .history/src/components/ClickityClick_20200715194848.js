@@ -30,7 +30,7 @@ class ClickityClick extends React.Component {
         <button onClick={this.handleClick}>Click me!</button>
       </div>
     );
-  }}
+  }
 
  
- export default ClickityClick;
+// export default ClickityClick;
